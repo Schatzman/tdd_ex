@@ -6,9 +6,11 @@ total_character_count = 0
 class CreatureCharacter(object):
     def __init__(self):
         self.id = total_character_count
+        total_character_count += 1
         self.alive = True
         self.str = 1
         self.hlt = 1
+
 
 
 class DiceSet(object):
